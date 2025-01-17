@@ -19,6 +19,23 @@ section{
 .text-light-grey{
     color: #727272;
 }
+.experience-button{
+    background-color: #FF900E;
+    color: white;
+    border-radius: 8px;
+    padding: 45px 40px;
+    border: none;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+.love-enjoy{
+    gap: 130px;
+}
+.ten{
+    font-size: 4rem;
+    font-weight: 800px;
+   
+}
 .bg-primery{
     background-color: rgba(255, 144, 14, 0.1);
 }
@@ -87,6 +104,7 @@ section{
     margin: 0 auto;
 }
 /* section one styles */
+
 .img-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -100,6 +118,10 @@ section{
         margin-left: 70px;
     }
     /* section two styles */
+    .img-btn > img{
+        width: 100%;
+        margin: 0 auto;
+    }
     .card-container{
         display: grid;
         gap: 50px;
@@ -156,16 +178,29 @@ section{
     align-items: center;
     margin-bottom: 100px;
 }
+#head{
+    border-left:5px solid #FF900E;
+}
+.love-card{
+    padding: 25px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px 5px rgb(183, 178, 178);
+}
 @media screen and (max-width:576px){
     .navbar, 
     .nav-links,
-    .architect-teams{
+    .architect-teams,
+    .love-enjoy{
         flex-direction: column;
     }
     .img-container,
     .card-container,
     .sponsor-pic{
         grid-template-columns: repeat(1,1fr);
+    }
+    .img-btn button{
+        margin: 0 auto;
     }
     
 }
