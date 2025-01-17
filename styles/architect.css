@@ -141,8 +141,10 @@ section{
     font-size: xx-large;
 }
 .sponsor-pic{
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
     margin-bottom: 60px;
+    filter: grayscale(100%);
 }
 .footer{
     display: flex;
@@ -161,7 +163,9 @@ section{
         flex-direction: column;
     }
     .img-container,
-    .card-container{
+    .card-container,
+    .sponsor-pic{
         grid-template-columns: repeat(1,1fr);
     }
+    
 }
