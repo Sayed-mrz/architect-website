@@ -10,7 +10,9 @@
 .display-flex{
     display: flex;
 }
-
+section{
+    margin-top: 100px;
+}
 .text-grey{
     color: #424242;
 }
@@ -29,6 +31,21 @@
     color: white;
     border: none;
 }
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.feature-heading{
+    font-size: 3rem;
+    }
+    #quick{
+        font-weight: 600;
+        color: #727272;
+    }
+    #feature{
+        color: #FF900E;
+        font-weight: 800;
+    }
 
 
 /* header style */
@@ -69,8 +86,82 @@
     width: 100%;
     margin: 0 auto;
 }
-@media screen and (max-width:576px){
-    .navbar, .nav-links{
+/* section one styles */
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.architect-teams{
+    align-items: center;
+    justify-content: center;
+    }
+    .feature-container{
+        margin-left: 70px;
+    }
+    /* section two styles */
+    .card-container{
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(4,1fr) ;
+        }
+    .card{
+        border: 1px solid #FF900E;
+        width: 200px;
+        height: 200px;
+        display: flex;
         flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        border-radius: 8px;
+
+    }
+    .card-name{
+        margin: 5px auto;
+        font-size: 1.20rem;
+        font-weight: 500;
+        color: #727272;
+    }
+    .card-number{
+        margin: 5px auto;
+        font-size: 3rem;
+        font-weight: 500;
+        }
+    #head-sec-two{
+        font-size: 3rem;
+}
+/* sponsor styles */
+.sponsor{
+    text-align: center;
+    margin: 60px auto;
+}
+.sponsor-heading{
+    font-size: xx-large;
+}
+.sponsor-pic{
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.footer{
+    display: flex;
+    text-align: center;
+    width: 60%;
+    height: 100px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+@media screen and (max-width:576px){
+    .navbar, 
+    .nav-links,
+    .architect-teams{
+        flex-direction: column;
+    }
+    .img-container,
+    .card-container{
+        grid-template-columns: repeat(1,1fr);
     }
 }
